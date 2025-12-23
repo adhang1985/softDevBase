@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaCheckCircle, FaRocket, FaUsers, FaLightbulb, FaShieldAlt } from 'react-icons/fa';
 import './About.css';
+import './Mobile-Cards-Enhancement.css';
 
 const About = () => {
   const values = [
@@ -82,7 +83,7 @@ const About = () => {
           <div className="about-visual">
             <div className="about-card slide-up">
               <div className="card-header">
-                <h3>Our Mission</h3>
+                <h3><span className="our-text">Our</span> Mission</h3>
               </div>
               <div className="card-content">
                 <p>
@@ -94,7 +95,7 @@ const About = () => {
 
             <div className="about-card slide-up">
               <div className="card-header">
-                <h3>Our Vision</h3>
+                <h3><span className="our-text">Our</span> Vision</h3>
               </div>
               <div className="card-content">
                 <p>
@@ -107,7 +108,7 @@ const About = () => {
         </div>
 
         <div className="values-section">
-          <h3 className="values-title text-center fade-in">Our Core Values</h3>
+          <h3 className="values-title text-center fade-in"><span className="our-text">Our</span> Core Values</h3>
           <div className="values-grid grid grid-4 slide-up">
             {values.map((value, index) => (
               <div key={index} className="value-card">

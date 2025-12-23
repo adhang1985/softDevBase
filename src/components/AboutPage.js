@@ -81,13 +81,15 @@ const AboutPage = () => {
       name: 'Dikshant Gangawat',
       role: 'Co-Founder & CEO',
       description: 'Visionary leader with expertise in business strategy and client relations.',
-      avatar: 'DG'
+      avatar: 'DG',
+      image: `${process.env.PUBLIC_URL}/images/dikshant-gangawat.jpg`
     },
     {
       name: 'Abhishek Dhang',
       role: 'Co-Founder & CTO',
       description: 'Technical expert specializing in software architecture and innovation.',
-      avatar: 'AD'
+      avatar: 'AD',
+      image: `${process.env.PUBLIC_URL}/images/abhishek-dhang.jpg`
     }
   ];
 
@@ -206,7 +208,7 @@ const AboutPage = () => {
       </div>
 
       {/* Team Section */}
-      <div className="team-section">
+      {/* <div className="team-section">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Meet Our Founders</h2>
@@ -218,7 +220,36 @@ const AboutPage = () => {
             {team.map((member, index) => (
               <div key={index} className="team-card">
                 <div className="team-avatar">
-                  <span className="avatar-initials">{member.avatar}</span>
+                  {member.image ? (
+                    <>
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="avatar-image"
+                        onError={(e) => {
+                          console.log('Image failed to load:', member.image);
+                          e.target.style.display = 'none';
+                          const initialsSpan = e.target.parentNode.querySelector('.avatar-initials');
+                          if (initialsSpan) {
+                            initialsSpan.style.display = 'flex';
+                          }
+                        }}
+                        onLoad={() => {
+                          console.log('Image loaded successfully:', member.image);
+                        }}
+                      />
+                      <span 
+                        className="avatar-initials" 
+                        style={{ display: 'none' }}
+                      >
+                        {member.avatar}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="avatar-initials">
+                      {member.avatar}
+                    </span>
+                  )}
                 </div>
                 <div className="team-info">
                   <h3 className="team-name">{member.name}</h3>
@@ -229,7 +260,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Mission Section */}
       <div className="mission-section">

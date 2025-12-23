@@ -153,7 +153,7 @@ const ContactPage = () => {
   const contactInfo = [
     {
       icon: FaPhone,
-      title: 'Call Dikshant',
+      title: 'Call',
       detail: '+91 77605 54526',
       action: 'tel:+917760554526'
     },
@@ -173,15 +173,17 @@ const ContactPage = () => {
 
   const founders = [
     {
-      name: 'Dikshant Gangawat',
+      name: 'Purva Sharma',
       role: 'Co-Founder & CEO',
-      avatar: 'DG',
+      avatar: 'PS',
+      image: `${process.env.PUBLIC_URL}/images/purva.jpg`,
       expertise: ['Business Strategy', 'Client Relations', 'Project Management']
     },
     {
-      name: 'Abhishek Dhang',
+      name: 'Ashima Sarkar',
       role: 'Co-Founder & CTO',
-      avatar: 'AD',
+      avatar: 'AS',
+      image: `${process.env.PUBLIC_URL}/images/ashima.jpg`,
       expertise: ['Software Architecture', 'Technical Innovation', 'Team Leadership']
     }
   ];
@@ -425,7 +427,30 @@ const ContactPage = () => {
                   {founders.map((founder, index) => (
                     <div key={index} className="founder-card">
                       <div className="founder-avatar">
-                        <span className="avatar-initials">{founder.avatar}</span>
+                        {founder.image ? (
+                          <>
+                            <img 
+                              src={founder.image} 
+                              alt={founder.name}
+                              className="founder-avatar-image"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                const initialsSpan = e.target.parentNode.querySelector('.avatar-initials');
+                                if (initialsSpan) {
+                                  initialsSpan.style.display = 'flex';
+                                }
+                              }}
+                            />
+                            <span 
+                              className="avatar-initials" 
+                              style={{ display: 'none' }}
+                            >
+                              {founder.avatar}
+                            </span>
+                          </>
+                        ) : (
+                          <span className="avatar-initials">{founder.avatar}</span>
+                        )}
                       </div>
                       <div className="founder-info">
                         <h4 className="founder-name">{founder.name}</h4>

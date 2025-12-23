@@ -63,12 +63,12 @@ const Header = () => {
                   <div className="dropdown-menu-container">
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Development</h4>
-                      <Link to="/services" className="dropdown-link">Mobile App Development</Link>
-                      <Link to="/services" className="dropdown-link">Web Development</Link>
-                      <Link to="/services" className="dropdown-link">Custom Software Development</Link>
-                      <Link to="/services" className="dropdown-link">MVP Development</Link>
-                      <Link to="/services" className="dropdown-link">API Development</Link>
-                      <Link to="/services" className="dropdown-link">UI/UX Design</Link>
+                      <Link to="/mobile-app-development" className="dropdown-link">Mobile App Development</Link>
+                      <Link to="/full-stack-development" className="dropdown-link">Full Stack Development</Link>
+                      <Link to="/ai-development" className="dropdown-link">AI Development</Link>
+                      <Link to="/blockchain-development" className="dropdown-link">Blockchain Development</Link>
+                      <Link to="/software-product-development" className="dropdown-link">Software Product Development</Link>
+                      <Link to="/uiux-design" className="dropdown-link">UI/UX Design</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Technologies</h4>
@@ -98,24 +98,24 @@ const Header = () => {
                   <div className="dropdown-menu-container">
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Technology</h4>
-                      <Link to="/services" className="dropdown-link">FinTech</Link>
-                      <Link to="/services" className="dropdown-link">HealthTech</Link>
-                      <Link to="/services" className="dropdown-link">EdTech</Link>
-                      <Link to="/services" className="dropdown-link">E-commerce</Link>
+                      <Link to="/fintech" className="dropdown-link">FinTech</Link>
+                      <Link to="/healthtech" className="dropdown-link">HealthTech</Link>
+                      <Link to="/edtech" className="dropdown-link">EdTech</Link>
+                      <Link to="/ecommerce" className="dropdown-link">E-commerce</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Business</h4>
-                      <Link to="/services" className="dropdown-link">Startups</Link>
-                      <Link to="/services" className="dropdown-link">SMEs</Link>
-                      <Link to="/services" className="dropdown-link">Enterprises</Link>
-                      <Link to="/services" className="dropdown-link">Agencies</Link>
+                      <Link to="/startups" className="dropdown-link">Startups</Link>
+                      <Link to="/smes" className="dropdown-link">SMEs</Link>
+                      <Link to="/enterprises" className="dropdown-link">Enterprises</Link>
+                      <Link to="/agencies" className="dropdown-link">Agencies</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Solutions</h4>
-                      <Link to="/services" className="dropdown-link">Custom Solutions</Link>
-                      <Link to="/services" className="dropdown-link">SaaS Development</Link>
-                      <Link to="/services" className="dropdown-link">Digital Platforms</Link>
-                      <Link to="/services" className="dropdown-link">Integration Services</Link>
+                      <Link to="/custom-solutions" className="dropdown-link">Custom Solutions</Link>
+                      <Link to="/saas-development" className="dropdown-link">SaaS Development</Link>
+                      <Link to="/digital-platforms" className="dropdown-link">Digital Platforms</Link>
+                      <Link to="/integration-services" className="dropdown-link">Integration Services</Link>
                     </div>
                   </div>
                 </div>
@@ -192,26 +192,71 @@ const Header = () => {
               </Link>
             </li>
             <li className="mobile-section">
-              <div className="mobile-section-title">🛠️ Services</div>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Mobile App Development</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Web Development</Link>
+              <div className="mobile-section-title">🛠️ Development Services</div>
+              <Link to="/mobile-app-development" className="nav-mobile-sublink" onClick={closeMenu}>Mobile App Development</Link>
+              <Link to="/full-stack-development" className="nav-mobile-sublink" onClick={closeMenu}>Full Stack Development</Link>
+              <Link to="/ai-development" className="nav-mobile-sublink" onClick={closeMenu}>AI Development</Link>
+              <Link to="/blockchain-development" className="nav-mobile-sublink" onClick={closeMenu}>Blockchain Development</Link>
+              <Link to="/software-product-development" className="nav-mobile-sublink" onClick={closeMenu}>Software Product Development</Link>
+              <Link to="/uiux-design" className="nav-mobile-sublink" onClick={closeMenu}>UI/UX Design</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">💻 Technologies</div>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>React & Node.js</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>React Native</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>JavaScript & TypeScript</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Python Development</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Cloud Solutions</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">🎯 Business Services</div>
               <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>IT Recruitment</Link>
               <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>IT Consultation</Link>
               <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Tech Support</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Digital Transformation</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Maintenance & Support</Link>
             </li>
             <li className="mobile-section">
-              <div className="mobile-section-title">🏢 Industries</div>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>FinTech</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>HealthTech</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>E-commerce</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Startups</Link>
+              <div className="mobile-section-title">🏭 Industries</div>
+              <Link to="/fintech" className="nav-mobile-sublink" onClick={closeMenu}>FinTech</Link>
+              <Link to="/healthtech" className="nav-mobile-sublink" onClick={closeMenu}>HealthTech</Link>
+              <Link to="/edtech" className="nav-mobile-sublink" onClick={closeMenu}>EdTech</Link>
+              <Link to="/ecommerce" className="nav-mobile-sublink" onClick={closeMenu}>E-commerce</Link>
             </li>
             <li className="mobile-section">
-              <div className="mobile-section-title">👥 Company</div>
+              <div className="mobile-section-title">🏢 Business</div>
+              <Link to="/startups" className="nav-mobile-sublink" onClick={closeMenu}>Startups</Link>
+              <Link to="/smes" className="nav-mobile-sublink" onClick={closeMenu}>SMEs</Link>
+              <Link to="/enterprises" className="nav-mobile-sublink" onClick={closeMenu}>Enterprises</Link>
+              <Link to="/agencies" className="nav-mobile-sublink" onClick={closeMenu}>Agencies</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">⚙️ Solutions</div>
+              <Link to="/custom-solutions" className="nav-mobile-sublink" onClick={closeMenu}>Custom Solutions</Link>
+              <Link to="/saas-development" className="nav-mobile-sublink" onClick={closeMenu}>SaaS Development</Link>
+              <Link to="/digital-platforms" className="nav-mobile-sublink" onClick={closeMenu}>Digital Platforms</Link>
+              <Link to="/integration-services" className="nav-mobile-sublink" onClick={closeMenu}>Integration Services</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">🏢 About Us</div>
               <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Our Story</Link>
               <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Our Team</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Portfolio</Link>
+              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Mission & Vision</Link>
               <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Careers</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">📚 Resources</div>
+              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Portfolio</Link>
+              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Case Studies</Link>
+              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Blog</Link>
+              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Pricing</Link>
+            </li>
+            <li className="mobile-section">
+              <div className="mobile-section-title">🛟 Support</div>
+              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Help Center</Link>
+              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Documentation</Link>
+              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>API Reference</Link>
+              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Contact Support</Link>
             </li>
             <li>
               <Link 

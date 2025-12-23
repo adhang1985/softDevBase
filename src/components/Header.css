@@ -667,6 +667,30 @@
   transition: all var(--transition-normal);
   backdrop-filter: blur(20px);
   z-index: 999;
+  max-height: calc(100vh - 75px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 215, 0, 0.5) rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar for Mobile Menu */
+.nav-mobile::-webkit-scrollbar {
+  width: 4px;
+}
+
+.nav-mobile::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.nav-mobile::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.5);
+  border-radius: 2px;
+}
+
+.nav-mobile::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 215, 0, 0.7);
 }
 
 .nav-mobile::before {
@@ -689,9 +713,11 @@
 .nav-mobile-list {
   list-style: none;
   margin: 0;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-lg) 0 var(--spacing-2xl) 0;
   position: relative;
   z-index: 2;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-mobile-link {
@@ -1025,6 +1051,34 @@
     min-height: 60px;
   }
   
+  /* Mobile Menu Specific Styles */
+  .nav-mobile {
+    max-height: calc(100vh - 65px);
+  }
+  
+  .header-scrolled .nav-mobile {
+    max-height: calc(100vh - 60px);
+  }
+  
+  .nav-mobile-list {
+    padding: var(--spacing-md) 0 var(--spacing-2xl) 0;
+  }
+  
+  .mobile-section {
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .mobile-section-title {
+    padding: var(--spacing-xs) var(--spacing-lg);
+    font-size: 0.95rem;
+  }
+  
+  .nav-mobile-sublink {
+    padding: var(--spacing-xs) var(--spacing-xl);
+    font-size: 0.85rem;
+  }
+  
   .logo {
     padding: var(--spacing-xs) 0;
     padding-right: var(--spacing-xs);
@@ -1088,9 +1142,43 @@
     height: 36px;
   }
   
+  /* Mobile Menu for Small Screens */
+  .nav-mobile {
+    max-height: calc(100vh - 65px);
+  }
+  
+  .nav-mobile-list {
+    padding: var(--spacing-sm) 0 var(--spacing-xl) 0;
+  }
+  
   .nav-mobile-link {
     padding: var(--spacing-sm) var(--spacing-md);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+  }
+  
+  .mobile-section {
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-xs) 0;
+  }
+  
+  .mobile-section-title {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.9rem;
+  }
+  
+  .nav-mobile-sublink {
+    padding: var(--spacing-xs) var(--spacing-lg);
+    font-size: 0.8rem;
+  }
+  
+  .mobile-cta-section {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+  }
+  
+  .nav-mobile-cta {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.9rem;
   }
   
   .dropdown-menu-container {

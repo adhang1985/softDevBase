@@ -15,6 +15,7 @@ import {
 } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import './Services.css';
+import './Mobile-Cards-Enhancement.css';
 
 const Services = () => {
   const [activeService, setActiveService] = useState(0);
@@ -135,10 +136,10 @@ const Services = () => {
   ];
 
   const stats = [
-    { number: 150, suffix: '+', label: 'Projects Completed', icon: <FaCheckCircle /> },
-    { number: 98, suffix: '%', label: 'Client Satisfaction', icon: <FaStar /> },
+    { number: 100, suffix: '+', label: 'Projects Completed', icon: <FaCheckCircle /> },
+    { number: 100, suffix: '%', label: 'Client Satisfaction', icon: <FaStar /> },
     { number: 50, suffix: '+', label: 'Expert Developers', icon: <FaUsers /> },
-    { number: 24, suffix: '/7', label: 'Support Available', icon: <FaHeadset /> }
+    { number: 24, suffix: '*7', label: 'Support Available', icon: <FaHeadset /> }
   ];
 
   const benefits = [
@@ -222,7 +223,7 @@ const Services = () => {
             <span>Premium Services</span>
           </div>
           <h2 className="section-title">
-            Our <span className="gradient-text">Expert Services</span>
+            <span className="our-text">Our</span> <span className="gradient-text">Expert Services</span>
           </h2>
           <p className="section-description">
             We deliver comprehensive technology solutions that drive business growth and digital transformation. 

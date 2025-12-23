@@ -277,7 +277,7 @@
 }
 
 .form-group label {
-  display: block;
+  /* display: block; */
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
   margin-bottom: var(--spacing-sm);
@@ -745,7 +745,13 @@
   justify-content: center;
   flex-shrink: 0;
   box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
-  border: 3px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.founder-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .avatar-initials {
@@ -790,6 +796,7 @@
 /* Quick Actions */
 .quick-actions {
   margin-bottom: var(--spacing-xl);
+  display: block!important;
 }
 
 .quick-actions-title {
@@ -1111,3 +1118,27 @@
     font-size: 0.9rem;
   }
 } 
+
+/* Founder Avatar Images in Contact Page */
+.contact-page .founder-avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-fast);
+}
+
+.contact-page .founder-avatar:hover .founder-avatar-image {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.contact-page .avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

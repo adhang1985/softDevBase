@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaRocket, FaArrowRight, FaPlay } from 'react-icons/fa';
 import './Hero.css';
+import './Hero-mobile.css';
 
 const Hero = () => {
   const scrollToServices = () => {

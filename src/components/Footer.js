@@ -18,6 +18,19 @@ const Footer = () => {
     }
   };
 
+  const founders = [
+    {
+      name: 'Purva Sharma',
+      initials: 'PS',
+      image: `${process.env.PUBLIC_URL}/images/purva.jpg`
+    },
+    {
+      name: 'Ashima Sarkar',
+      initials: 'AS',
+      image: `${process.env.PUBLIC_URL}/images/ashima.jpg`
+    }
+  ];
+
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
@@ -85,18 +98,37 @@ const Footer = () => {
                 <div className="founders-info">
                   <span className="founders-label">Founders:</span>
                   <div className="founders-avatars">
-                    <div className="founder-card">
-                      <div className="founder-avatar">
-                        <span className="founder-initials">DG</span>
+                    {founders.map((founder, index) => (
+                      <div key={index} className="founder-card">
+                        <div className="founder-avatar">
+                          {founder.image ? (
+                            <>
+                              <img 
+                                src={founder.image} 
+                                alt={founder.name}
+                                className="founder-avatar-image"
+                                onError={(e) => {
+                                  e.target.style.display = 'none';
+                                  const initialsSpan = e.target.parentNode.querySelector('.founder-initials');
+                                  if (initialsSpan) {
+                                    initialsSpan.style.display = 'flex';
+                                  }
+                                }}
+                              />
+                              <span 
+                                className="founder-initials" 
+                                style={{ display: 'none' }}
+                              >
+                                {founder.initials}
+                              </span>
+                            </>
+                          ) : (
+                            <span className="founder-initials">{founder.initials}</span>
+                          )}
+                        </div>
+                        <span className="founder-name">{founder.name}</span>
                       </div>
-                      <span className="founder-name">Dikshant Gangawat</span>
-                    </div>
-                    <div className="founder-card">
-                      <div className="founder-avatar">
-                        <span className="founder-initials">AD</span>
-                      </div>
-                      <span className="founder-name">Abhishek Dhang</span>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -190,7 +222,6 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="footer-copyright">
               <p>&copy; {currentYear} SoftDevSquad. All rights reserved.</p>
-              <p>Founded by Dikshant Gangawat & Abhishek Dhang</p>
             </div>
             
             <div className="footer-bottom-links">
