@@ -27,6 +27,8 @@ import IntegrationServicesPage from './components/IntegrationServicesPage';
 import BlockChainDevelopment from './components/BlockChainDevelopment';
 import UIUXDesign from './components/UIUXDesign';
 import SoftwareProductDevelopment from './components/SoftwareProductDevelopment';
+import PrivacyPage from './components/PrivacyPage';
+import TermsPage from './components/TermsPage';
 import ScrollToTop from './components/ScrollToTop';
 import './styles/App.css';
 
@@ -68,6 +70,8 @@ function App() {
            <Route path="/software-product-development" element={<SoftwareProductDevelopment />} />
            <Route path="/about" element={<AboutPage />} />
            <Route path="/contact" element={<ContactPage />} />
+           <Route path="/privacy" element={<PrivacyPage />} />
+           <Route path="/terms" element={<TermsPage />} />
            <Route path="/demo" element={<BookDemo />} />
          </Routes>
         <Footer />

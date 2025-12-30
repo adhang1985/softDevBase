@@ -72,19 +72,19 @@ const Header = () => {
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Technologies</h4>
-                      <Link to="/services" className="dropdown-link">React & Node.js</Link>
-                      <Link to="/services" className="dropdown-link">React Native</Link>
-                      <Link to="/services" className="dropdown-link">JavaScript & TypeScript</Link>
-                      <Link to="/services" className="dropdown-link">Python Development</Link>
-                      <Link to="/services" className="dropdown-link">Cloud Solutions</Link>
+                      <Link to="/" className="dropdown-link">React & Node.js</Link>
+                      <Link to="/" className="dropdown-link">React Native</Link>
+                      <Link to="/" className="dropdown-link">JavaScript & TypeScript</Link>
+                      <Link to="/" className="dropdown-link">Python Development</Link>
+                      <Link to="/" className="dropdown-link">Cloud Solutions</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Business Services</h4>
-                      <Link to="/services" className="dropdown-link">IT Recruitment</Link>
-                      <Link to="/services" className="dropdown-link">IT Consultation</Link>
-                      <Link to="/services" className="dropdown-link">Tech Support</Link>
-                      <Link to="/services" className="dropdown-link">Digital Transformation</Link>
-                      <Link to="/services" className="dropdown-link">Maintenance & Support</Link>
+                      <Link to="/" className="dropdown-link">IT Recruitment</Link>
+                      <Link to="/" className="dropdown-link">IT Consultation</Link>
+                      <Link to="/" className="dropdown-link">Tech Support</Link>
+                      <Link to="/" className="dropdown-link">Digital Transformation</Link>
+                      <Link to="/" className="dropdown-link">Maintenance & Support</Link>
                     </div>
                   </div>
                 </div>
@@ -129,24 +129,24 @@ const Header = () => {
                   <div className="dropdown-menu-container">
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">About Us</h4>
-                      <Link to="/about" className="dropdown-link">Our Story</Link>
-                      <Link to="/about" className="dropdown-link">Our Team</Link>
-                      <Link to="/about" className="dropdown-link">Mission & Vision</Link>
-                      <Link to="/about" className="dropdown-link">Careers</Link>
+                      <Link to="/" className="dropdown-link">Our Story</Link>
+                      <Link to="/" className="dropdown-link">Our Team</Link>
+                      <Link to="/" className="dropdown-link">Mission & Vision</Link>
+                      <Link to="/" className="dropdown-link">Careers</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Resources</h4>
-                      <Link to="/about" className="dropdown-link">Portfolio</Link>
-                      <Link to="/about" className="dropdown-link">Case Studies</Link>
-                      <Link to="/about" className="dropdown-link">Blog</Link>
-                      <Link to="/services" className="dropdown-link">Pricing</Link>
+                      <Link to="/" className="dropdown-link">Portfolio</Link>
+                      <Link to="/" className="dropdown-link">Case Studies</Link>
+                      <Link to="/" className="dropdown-link">Blog</Link>
+                      <Link to="/" className="dropdown-link">Pricing</Link>
                     </div>
                     <div className="dropdown-section">
                       <h4 className="dropdown-title">Support</h4>
-                      <Link to="/contact" className="dropdown-link">Help Center</Link>
-                      <Link to="/contact" className="dropdown-link">Documentation</Link>
-                      <Link to="/contact" className="dropdown-link">API Reference</Link>
-                      <Link to="/contact" className="dropdown-link">Contact Support</Link>
+                      <Link to="/" className="dropdown-link">Help Center</Link>
+                      <Link to="/" className="dropdown-link">Documentation</Link>
+                      <Link to="/" className="dropdown-link">API Reference</Link>
+                      <Link to="/" className="dropdown-link">Contact Support</Link>
                     </div>
                   </div>
                 </div>
@@ -202,19 +202,19 @@ const Header = () => {
             </li>
             <li className="mobile-section">
               <div className="mobile-section-title">💻 Technologies</div>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>React & Node.js</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>React Native</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>JavaScript & TypeScript</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Python Development</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Cloud Solutions</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>React & Node.js</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>React Native</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>JavaScript & TypeScript</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Python Development</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Cloud Solutions</Link>
             </li>
             <li className="mobile-section">
               <div className="mobile-section-title">🎯 Business Services</div>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>IT Recruitment</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>IT Consultation</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Tech Support</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Digital Transformation</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Maintenance & Support</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>IT Recruitment</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>IT Consultation</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Tech Support</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Digital Transformation</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Maintenance & Support</Link>
             </li>
             <li className="mobile-section">
               <div className="mobile-section-title">🏭 Industries</div>
@@ -240,23 +240,23 @@ const Header = () => {
             <li className="mobile-section">
               <div className="mobile-section-title">🏢 About Us</div>
               <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Our Story</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Our Team</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Mission & Vision</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Careers</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Our Team</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Mission & Vision</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Careers</Link>
             </li>
             <li className="mobile-section">
               <div className="mobile-section-title">📚 Resources</div>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Portfolio</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Case Studies</Link>
-              <Link to="/about" className="nav-mobile-sublink" onClick={closeMenu}>Blog</Link>
-              <Link to="/services" className="nav-mobile-sublink" onClick={closeMenu}>Pricing</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Portfolio</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Case Studies</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Blog</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Pricing</Link>
             </li>
             <li className="mobile-section">
               <div className="mobile-section-title">🛟 Support</div>
-              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Help Center</Link>
-              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Documentation</Link>
-              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>API Reference</Link>
-              <Link to="/contact" className="nav-mobile-sublink" onClick={closeMenu}>Contact Support</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Help Center</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Documentation</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>API Reference</Link>
+              <Link to="/" className="nav-mobile-sublink" onClick={closeMenu}>Contact Support</Link>
             </li>
             <li>
               <Link 

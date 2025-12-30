@@ -174,8 +174,8 @@ const Footer = () => {
                                               <li><a href="#" className="footer-link" onClick={(e) => e.preventDefault()}>Careers</a></li>
                   <li><a href="#" className="footer-link" onClick={(e) => e.preventDefault()}>Blog</a></li>
                   <li><a href="#" className="footer-link" onClick={(e) => e.preventDefault()}>Case Studies</a></li>
-                  <li><a href="#" className="footer-link" onClick={(e) => e.preventDefault()}>Privacy Policy</a></li>
-                  <li><a href="#" className="footer-link" onClick={(e) => e.preventDefault()}>Terms of Service</a></li>
+                  <li><Link to="/privacy" className="footer-link">Privacy Policy</Link></li>
+                  <li><Link to="/terms" className="footer-link">Terms of Service</Link></li>
               </ul>
             </div>
 
@@ -225,8 +225,8 @@ const Footer = () => {
             </div>
             
             <div className="footer-bottom-links">
-                        <a href="#" className="footer-bottom-link" onClick={(e) => e.preventDefault()}>Privacy</a>
-          <a href="#" className="footer-bottom-link" onClick={(e) => e.preventDefault()}>Terms</a>
+                        <Link to="/privacy" className="footer-bottom-link">Privacy</Link>
+          <Link to="/terms" className="footer-bottom-link">Terms</Link>
           <a href="#" className="footer-bottom-link" onClick={(e) => e.preventDefault()}>Cookies</a>
             </div>
             
